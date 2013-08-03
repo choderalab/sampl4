@@ -33,15 +33,20 @@ for ligand_name in ligand_names:
     os.chdir(system_directory)
 
     # Run antechamber.
-    command = 'antechamber -i ligand.mol2 -fi mol2 -o ligand.gaff.mol2 -fo mol2 -c bcc -nc 0'
-    output = commands.getoutput(command)
-    print output
+    #command = 'antechamber -i ligand.mol2 -fi mol2 -o ligand.gaff.mol2 -fo mol2 -c bcc -nc 0'
+    #output = commands.getoutput(command)
+    #print output
 
     # Run parmchk.
-    command = 'parmchk -i ligand.gaff.mol2 -o ligand.frcmod -f mol2'
-    output = commands.getoutput(command)
-    print output
+    #command = 'parmchk -i ligand.gaff.mol2 -o ligand.frcmod -f mol2'
+    #output = commands.getoutput(command)
+    #print output
 
+    import ligandtools
+    molecule = ligandtools.readMolecule('ligand.mol2')
+    gaff_mol2_filename = 'ligand.gaff.mol2'
+    frcmod_filename = 'ligand.frcmod'
+    ligandtools.parameterizeForAmber(molecule, charge_model='bcc', verbose=True, resname='MOL', ligand_obj_name='molecule', frcmod_filename=frcmod_filename, gaff_mol2_filename=gaff_mol2_filename)
     # Restore original directory.
     os.chdir(cwd)
     
