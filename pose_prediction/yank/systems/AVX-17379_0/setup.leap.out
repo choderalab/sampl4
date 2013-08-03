@@ -1,0 +1,155 @@
+-I: Adding /usr/local/amber11/dat/leap/prep to search path.
+-I: Adding /usr/local/amber11/dat/leap/lib to search path.
+-I: Adding /usr/local/amber11/dat/leap/parm to search path.
+-I: Adding /usr/local/amber11/dat/leap/cmd to search path.
+-f: Source setup.leap.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./setup.leap.in
+----- Source: /usr/local/amber11/dat/leap/cmd/leaprc.ff99SB
+----- Source of /usr/local/amber11/dat/leap/cmd/leaprc.ff99SB done
+Log file: ./leap.log
+Loading parameters: /usr/local/amber11/dat/leap/parm/parm99.dat
+Reading title:
+PARM99 for DNA,RNA,AA, organic molecules, TIP3P wat. Polariz.& LP incl.02/04/99
+Loading parameters: /usr/local/amber11/dat/leap/parm/frcmod.ff99SB
+Reading force field modification type file (frcmod)
+Reading title:
+Modification/update of parm99.dat (Hornak & Simmerling)
+Loading library: /usr/local/amber11/dat/leap/lib/all_nucleic94.lib
+Loading library: /usr/local/amber11/dat/leap/lib/all_amino94.lib
+Loading library: /usr/local/amber11/dat/leap/lib/all_aminoct94.lib
+Loading library: /usr/local/amber11/dat/leap/lib/all_aminont94.lib
+Loading library: /usr/local/amber11/dat/leap/lib/ions94.lib
+Loading library: /usr/local/amber11/dat/leap/lib/solvents.lib
+----- Source: /usr/local/amber11/dat/leap/cmd/leaprc.gaff
+----- Source of /usr/local/amber11/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /usr/local/amber11/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+Using H(N)-modified Bondi radii
+Loading PDB file: ../../../test/3NF8_A.modeller.pdb
+  total atoms in file: 1410
+  Leap added 1384 missing atoms according to residue templates:
+       1384 H / lone pairs
+Loading PDB file: ../../../test/3NF8_B.modeller.pdb
+  total atoms in file: 1410
+  Leap added 1384 missing atoms according to residue templates:
+       1384 H / lone pairs
+Loading parameters: ./ligand.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here
+Loading Mol2 file: ./ligand.gaff.mol2
+Reading MOLECULE named AVX-17379_0
+Checking 'complex'....
+WARNING: The unperturbed charge of the unit: -1.000004 is not zero.
+Warning: Close contact of 0.218948 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<HG22 9>
+Warning: Close contact of 1.440785 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<CG2 7>
+Warning: Close contact of 2.212049 angstroms between .R<CGLU 366>.A<OE1 12> and .R<GLN 180>.A<HE21 14>
+Warning: Close contact of 1.869058 angstroms between .R<CGLU 366>.A<HG3 10> and .R<GLN 180>.A<HE22 15>
+Warning: Close contact of 1.276371 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C2 2>
+Warning: Close contact of 1.714836 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C1 1>
+Warning: Close contact of 1.465297 angstroms between .R<LYS 365>.A<HZ2 19> and .R<MOL 367>.A<H2 18>
+Warning: Close contact of 1.541718 angstroms between .R<LYS 365>.A<HZ2 19> and .R<MOL 367>.A<C2 2>
+Warning: Close contact of 0.752256 angstroms between .R<LYS 365>.A<HZ1 18> and .R<MOL 367>.A<H2 18>
+Warning: Close contact of 1.060124 angstroms between .R<LYS 365>.A<HZ1 18> and .R<MOL 367>.A<C2 2>
+Warning: Close contact of 2.158579 angstroms between .R<LYS 365>.A<HZ1 18> and .R<MOL 367>.A<C1 1>
+Warning: Close contact of 1.103441 angstroms between .R<LYS 365>.A<NZ 17> and .R<MOL 367>.A<H2 18>
+Warning: Close contact of 2.013842 angstroms between .R<LYS 365>.A<NZ 17> and .R<MOL 367>.A<C4 4>
+Warning: Close contact of 0.092762 angstroms between .R<LYS 365>.A<NZ 17> and .R<MOL 367>.A<C2 2>
+Warning: Close contact of 2.229994 angstroms between .R<LYS 365>.A<HE3 16> and .R<MOL 367>.A<H4 20>
+Warning: Close contact of 2.063926 angstroms between .R<LYS 365>.A<HE3 16> and .R<MOL 367>.A<C7 7>
+Warning: Close contact of 1.008237 angstroms between .R<LYS 365>.A<HE3 16> and .R<MOL 367>.A<C4 4>
+Warning: Close contact of 1.689729 angstroms between .R<LYS 365>.A<CE 14> and .R<MOL 367>.A<C4 4>
+Warning: Close contact of 1.492389 angstroms between .R<LYS 365>.A<CE 14> and .R<MOL 367>.A<C2 2>
+Warning: Close contact of 1.976908 angstroms between .R<LYS 365>.A<HD2 12> and .R<MOL 367>.A<C1 1>
+Warning: Close contact of 0.769991 angstroms between .R<LYS 365>.A<HG2 9> and .R<MOL 367>.A<C6 6>
+Warning: Close contact of 1.626500 angstroms between .R<THR 364>.A<H 2> and .R<GLN 363>.A<HG3 10>
+Warning: Close contact of 2.110886 angstroms between .R<GLY 347>.A<HA3 5> and .R<GLY 343>.A<H 2>
+Warning: Close contact of 1.254309 angstroms between .R<GLY 343>.A<HA3 5> and .R<LYS 342>.A<HA 4>
+Warning: Close contact of 1.258383 angstroms between .R<GLN 291>.A<HE21 14> and .R<LYS 281>.A<HZ1 18>
+Warning: Close contact of 1.881621 angstroms between .R<GLY 185>.A<H 2> and .R<NMET 184>.A<HB3 9>
+Warning: Close contact of 1.441141 angstroms between .R<GLY 160>.A<HA3 5> and .R<GLY 164>.A<HA2 4>
+Checking parameters for unit 'complex'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 28
+Unit is OK.
+Total unperturbed charge:  -1.000004
+Total perturbed charge:    -1.000004
+Checking Unit.
+WARNING: The unperturbed charge of the unit: 0.999996 is not zero.
+
+ -- ignoring the warning.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 10 improper torsions applied
+Building H-Bond parameters.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	MOL	1
+  )
+ (no restraints)
+Checking Unit.
+WARNING: The unperturbed charge of the unit: -2.000000 is not zero.
+
+ -- ignoring the warning.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1118 improper torsions applied
+Building H-Bond parameters.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLU	2
+	NMET	2
+  )
+ (no restraints)
+Checking Unit.
+WARNING: The unperturbed charge of the unit: -1.000004 is not zero.
+
+ -- ignoring the warning.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1128 improper torsions applied
+Building H-Bond parameters.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLU	2
+	MOL	1
+	NMET	2
+  )
+ (no restraints)
+	Quit

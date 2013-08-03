@@ -45,7 +45,7 @@ remark goes here
 Loading Mol2 file: ./ligand.gaff.mol2
 Reading MOLECULE named AVX101122_1
 Checking 'complex'....
-WARNING: The unperturbed charge of the unit: -2.000000 is not zero.
+WARNING: The unperturbed charge of the unit: -2.000017 is not zero.
 Warning: Close contact of 0.218948 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<HG22 9>
 Warning: Close contact of 1.440785 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<CG2 7>
 Warning: Close contact of 2.212049 angstroms between .R<CGLU 366>.A<OE1 12> and .R<GLN 180>.A<HE21 14>
@@ -80,8 +80,8 @@ Checking for bond parameters.
 Checking for angle parameters.
 check:  Warnings: 30
 Unit is OK.
-Total unperturbed charge:  -2.000000
-Total perturbed charge:    -2.000000
+Total unperturbed charge:  -2.000017
+Total perturbed charge:    -2.000017
 Checking Unit.
 Building topology.
 Building atom parameters.
@@ -126,7 +126,7 @@ Marking per-residue atom chain types.
   )
  (no restraints)
 Checking Unit.
-WARNING: The unperturbed charge of the unit: -2.000000 is not zero.
+WARNING: The unperturbed charge of the unit: -2.000017 is not zero.
 
  -- ignoring the warning.
 
