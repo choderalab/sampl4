@@ -1,0 +1,37 @@
+# Set up complex for GBSA simulation with OBC model.
+
+# Load AMBER 99SB-ILDN forcefield.
+source leaprc.ff99sbildn
+
+# Load GAFF parameters.
+source leaprc.gaff
+
+# Set GB radii to recommended values for OBC.
+set default PBRadii mbondi2 
+
+# Load in protein.
+receptor = loadPdb 3nf8_reference.edited.pdb
+
+# Load parameters for ligand.
+loadAmberParams AVX-15988_0.frcmod
+
+# Load ligand.
+ligand = loadMol2 AVX-15988_0.gaff.mol2
+
+# Create complex.
+complex = combine { receptor ligand }
+
+# Check complex.
+check complex
+
+# Report on net charge.
+charge complex
+
+# Write parameters.
+saveAmberParm ligand ligand.prmtop ligand.crd
+saveAmberParm receptor receptor.prmtop receptor.crd
+saveAmberParm complex complex.prmtop complex.crd
+
+# Exit
+quit
+

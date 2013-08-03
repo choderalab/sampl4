@@ -1,0 +1,33 @@
+This directory contains input files relating to the HIV integrase pose prediction challenge. For this portion of the challenge, your job is to predict ligand binding modes for the provided ligands (noting the discussion below concerning possible alternate protonation states/tautomers), and results will be judged based on comparison to binding modes observed crystallographically.
+
+Please be sure to read this file, as the instructions here are vital to your successful participation in the challenge.
+
+Contents of this directory include:
+- ligands: Directory containing .sdf and .mol2 files of all of the binders in question here. Molecule file names and titles are the codes we use here for identifying ligands. Please note that .sdf files use a format where aromatics are shown with alternating single/double bonds, while .mol2 files identify aromatics separately. These are intended to provide your input files for predictions. 
+- smiles.txt: (For your information) A listing of molecule IDs and SMILES strings for all molecules in the set.
+- 3nf8_reference.pdb: 3NF8 structure from the PDB, aligned to the frame of reference we are using here for predictions. This particular structure happens to have ligands in all of the binding sites of interest here, and so is particularly useful. We also use this to identify *which* binding sites you should focus on, as we describe below. 
+- README: This README file
+- HIV_Integrase_Intro.pdf: Writeup providing an introduction to this binding site.
+
+Depending on the nature of your method, your submission will involve component 3, below, as well aseither component 1) or 2):
+1) Docking/static protein methods: Predicted binding modes relative to the 3NF8 reference structure provided (3NF8 from the PDB with an alternate frame of reference). These should be as .mol2 or .sdf files containing the ligand only, with one file per ligand. If multiple binding modes for a single molecule are predicted, these should be as additional conformations within the same file. (This is to be used not for lower ranked poses, but rather for cases where you actually predict binding in multiple sites/orientations)
+2) Flexible protein methods: Predicted binding modes including the protein structure, in PDB format, one for each ligand, with multiple binding modes present either as multiple residues (for multiple sites occupied) or as alternate locations (for multiple occupancy of one site).  
+3) A text file (predictions.txt) listing your confidence (1-5, with 1 being low and 5 being high) in each of your predictions. Wrong predictions with low confidence will have lower penalties, but also lower rewards if correct. 
+
+In both 1) and 2), Ligands should always include all protons, as in the provided ligand files. See the disclaimer below concerning protonation/tautomer states, however.
+
+The protein structure is a dimer, so there are essentially two equivalent versions of each binding site here. We have selected just one of each site for the purposes of judging binding mode prediction. Specifically, the sites we plan on judging (the three unique sites) are (in 3NF8) those occupied by the ligand with residue name CDQ: (a) The Y3 site: residue number 257 chain B; (b) The fragment site: residue number 277 chain A; and (c) the LEDGF site: residue number 267, chain A. If you are using a method which requires specifying a binding site, we suggest you focus your efforts on these regions of the protein (as opposed to the equivalent binding sites on the other side of the dimer), as we plan to judge predictions in these sites.
+
+We recognize that the presence of three different binding sites may be a deterrent to some who would prefer to focus on predicting binding modes given knowledge of the likely binding site. To aid these people, we will give the hint that many (though by no means all) of the ligands bind in the LEDGF site, so if you like, you can focus just on that site and still do relatively well. If enough people do this, we may also add a separate scoring category for those who do so.
+
+IMPORTANT DISCLAIMER:
+All ligand protonation/tautomer states are provided "as is" without any warranty. You may wish to consider multiple possible protonation or tautomeric states for different ligands, as these can change in solution and in the binding site. We have made some effort (using Epik and/or QuacPac toolkits) to predict likely protonation states/tautomer states (and we highlight some potential challenges below). But you should do your own due diligence here as well and at least look to see whether you expect any issues, at least if protonation/tautomer states are important for your method to succeed. Remember, these are crystal structures and so they provide relatively minimal insight into protonation/tautomeric state in many cases.
+
+SOME SPECIFIC PROTONATION/TAUTOMER STATE ISSUES TO PAY ATTENTION TO:
+(by compound name)
+- AVX17715: Epik suggests some uncertainty about whether the central secondary amine (between the bicycle and the single ring) is singly or doubly protonated. In our provided structure it is doubly protonated as OEChem assigns it.
+- AVX48741: Epik suggests some uncertainty about whether the tertiary amine in the large ring opposite the oxygen is positively charged or not. In our provided structure it is charged as OEChem assigns it.
+- AVX38779-AVX38789: Epik has some uncertainty about whether the tertiary amine is protonated. Our structures have it protonated, as OEChem assigns.
+- GL5243-102: Epik suggests two possible tautomers, differing in which nitrogen on the five-membered ring is protonated. It also suggests the possibility both may be protonated. We have picked one specific tautomer here but you may wish to consider other possibilities.
+- AVX101118-101119: Epik has some uncertainty about whether the tertiary amine is protonated. Our structures have it protonated, as OEChem assigns.
+  

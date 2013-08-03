@@ -1,0 +1,2 @@
+antechamber -i AVX-15988_0.mol2 -fi mol2 -o AVX-15988_0.gaff.mol2 -fo mol2 -c bcc
+parmchk -i AVX-15988_0.gaff.mol2 -o AVX-15988_0.frcmod -f mol2
