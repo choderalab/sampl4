@@ -14,11 +14,10 @@ pbs_template = """\
 #SBATCH --time=12:00:00
 #SBATCH --partition=gpu
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=5
+#SBATCH --ntasks-per-node=6
 #SBATCH --output=%(jobname)s-%%j.stdout
 #SBATCH --error=%(jobname)s-%%j.stderr
 #SBATCH --gres=gpu:4
-##SBATCH --constraint=gtx680
 
 setenv | grep SLURM
 
@@ -30,7 +29,7 @@ date
 setenv YANKHOME /cbio/jclab/home/chodera/yank
 
 # Select job directory.
-setenv JOBDIR ${YANKHOME}/test-systems/T4-lysozyme-L99A/amber-gbsa/amber-gbsa/%(molecule)s
+setenv JOBDIR %(jobdir)s
 
 # Set YANK directory.
 setenv YANKDIR ${YANKHOME}/src/
@@ -41,13 +40,13 @@ date
 cd $JOBDIR
 
 # Clean up old working files
-rm -f *.nc
+#rm -f *.nc
 
 # Set PYTHONPATH
 setenv PYTHONPATH ${YANKDIR}:${PYTHONPATH}
 
 # Run YANK
-mpirun -bootstrap slurm python $YANKDIR/yank.py --mpi --receptor_prmtop receptor.prmtop --ligand_prmtop ligand.prmtop --complex_prmtop complex.prmtop --complex_crd complex.crd --output . --restraints flat-bottom --iterations 10000 --verbose
+mpirun -bootstrap slurm python $YANKDIR/yank.py --mpi --receptor_prmtop receptor.prmtop --ligand_prmtop ligand.prmtop --complex_prmtop complex.prmtop --complex_crd complex.crd --output . --restraints flat-bottom --randomize_ligand --iterations 10000 --verbose
 
 date
 """
@@ -57,37 +56,28 @@ def isletter(c):
       return True
    return False   
 
-# T4 lysozyme L99A
-molecules = ['1-methylpyrrole', '2-fluorobenzaldehyde', 'benzene', 'ethylbenzene', 'indole', 'n-butylbenzene', 'n-propylbenzene', 'p-xylene', 'thieno_23c_pyridine', '12-dichlorobenzene', '23-benzofuran', 'benzenedithiol', 'indene', 'isobutylbenzene', 'n-methylaniline', 'o-xylene', 'phenol', 'toluene']
-#molecules = ['p-xylene', 'benzene', 'phenol', 'indole', '12-dichlorobenzene']
-#molecules = ['p-xylene', 'benzene', 'phenol', '12-dichlorobenzene', '1-methylpyrrole']
-#molecules = ['p-xylene']
-
-# FKBP
-#molecules = ['L12', 'L14', 'L20', 'LG2', 'LG3', 'LG5', 'LG6', 'LG8', 'LG9']
-
-# Chk1 kinase
-#molecules = ['molec000001', 'molec000002', 'molec000003']
-
-# Kim's congeneric series
-#molecules += ['molec000023', 'molec000034', 'molec000073', 'molec000089', 'molec000096']
+import os, os.path
+molecules = os.listdir('systems')
 
 for molecule in molecules:
    print molecule
 
-   # Make sure job name begins with a letter
    jobname = molecule
    
+   jobdir = os.path.join('systems', molecule)
+   jobdir = os.path.abspath(jobdir)
+
    # Form PBS script
    pbs = pbs_template % vars()
    #print pbs
 
    # Construct directory.
-   filename = '../test-systems/T4-lysozyme-L99A/amber-gbsa/amber-gbsa/%(molecule)s/run.pbs' % vars()
+   filename = os.path.join(jobdir, 'run.slurm')
    outfile = open(filename, 'w')
    outfile.write(pbs)
    outfile.close()
 
    # Submit to PBS
-   output = commands.getoutput('qsub %(filename)s' % vars());
+   output = commands.getoutput('sbatch %(filename)s' % vars());
    print output
+
