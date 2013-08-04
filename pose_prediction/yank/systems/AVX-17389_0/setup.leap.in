@@ -1,7 +1,7 @@
 # Set up complex for GBSA simulation with OBC model.
 
 # Load AMBER 99SB-ILDN forcefield.
-source leaprc.ff99SB
+source leaprc.ff99SBildn
 
 # Load GAFF parameters.
 source leaprc.gaff

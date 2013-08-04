@@ -8,8 +8,8 @@ ca-cc-cf   64.090     127.310   same as ca-ce-cf
 c -cc-cf   64.260     126.410   same as c -ce-cf
 
 DIHE
-ca-ca-cc-c    1    2.550       180.000           2.000      same as X -c2-ca-X 
-ca-ca-cc-cf   1    2.550       180.000           2.000      same as X -c2-ca-X 
+ca-ca-cc-c    1    0.700       180.000           2.000      same as X -c2-ca-X 
+ca-ca-cc-cf   1    0.700       180.000           2.000      same as X -c2-ca-X 
 ca-ca-cf-cc   1    6.650       180.000           2.000      same as X -c2-cf-X 
 ca-ca-cf-ha   1    6.650       180.000           2.000      same as X -c2-cf-X 
 ca-cc-cf-ca   1    6.650       180.000           2.000      same as X -ce-cf-X 

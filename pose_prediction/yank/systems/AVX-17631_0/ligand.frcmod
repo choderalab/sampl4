@@ -6,8 +6,8 @@ BOND
 ANGLE
 
 DIHE
-ca-ca-cc-nd   1    2.550       180.000           2.000      same as X -c2-ca-X 
-ca-ca-cc-nh   1    2.550       180.000           2.000      same as X -c2-ca-X 
+ca-ca-cc-nd   1    0.700       180.000           2.000      same as X -c2-ca-X 
+ca-ca-cc-nh   1    0.700       180.000           2.000      same as X -c2-ca-X 
 ca-os-nd-cc   1    3.000       180.000           2.000      same as X -ne-os-X 
 
 IMPROPER

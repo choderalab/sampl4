@@ -1,34 +1,34 @@
--I: Adding /usr/local/amber11/dat/leap/prep to search path.
--I: Adding /usr/local/amber11/dat/leap/lib to search path.
--I: Adding /usr/local/amber11/dat/leap/parm to search path.
--I: Adding /usr/local/amber11/dat/leap/cmd to search path.
+-I: Adding /usr/local/amber12/dat/leap/prep to search path.
+-I: Adding /usr/local/amber12/dat/leap/lib to search path.
+-I: Adding /usr/local/amber12/dat/leap/parm to search path.
+-I: Adding /usr/local/amber12/dat/leap/cmd to search path.
 -f: Source setup.leap.in.
 
 Welcome to LEaP!
 (no leaprc in search path)
 Sourcing: ./setup.leap.in
------ Source: /usr/local/amber11/dat/leap/cmd/leaprc.ff99SB
------ Source of /usr/local/amber11/dat/leap/cmd/leaprc.ff99SB done
+----- Source: /usr/local/amber12/dat/leap/cmd/leaprc.ff99SBildn
+----- Source of /usr/local/amber12/dat/leap/cmd/leaprc.ff99SBildn done
 Log file: ./leap.log
-Loading parameters: /usr/local/amber11/dat/leap/parm/parm99.dat
+Loading parameters: /usr/local/amber12/dat/leap/parm/parm99.dat
 Reading title:
 PARM99 for DNA,RNA,AA, organic molecules, TIP3P wat. Polariz.& LP incl.02/04/99
-Loading parameters: /usr/local/amber11/dat/leap/parm/frcmod.ff99SB
+Loading parameters: /usr/local/amber12/dat/leap/parm/frcmod.ff99SBildn
 Reading force field modification type file (frcmod)
 Reading title:
-Modification/update of parm99.dat (Hornak & Simmerling)
-Loading library: /usr/local/amber11/dat/leap/lib/all_nucleic94.lib
-Loading library: /usr/local/amber11/dat/leap/lib/all_amino94.lib
-Loading library: /usr/local/amber11/dat/leap/lib/all_aminoct94.lib
-Loading library: /usr/local/amber11/dat/leap/lib/all_aminont94.lib
-Loading library: /usr/local/amber11/dat/leap/lib/ions94.lib
-Loading library: /usr/local/amber11/dat/leap/lib/solvents.lib
------ Source: /usr/local/amber11/dat/leap/cmd/leaprc.gaff
------ Source of /usr/local/amber11/dat/leap/cmd/leaprc.gaff done
+Modification/update of parm99.dat (Hornak & Simmerling) + ILDN corrections
+Loading library: /usr/local/amber12/dat/leap/lib/all_nucleic94.lib
+Loading library: /usr/local/amber12/dat/leap/lib/all_amino94ildn.lib
+Loading library: /usr/local/amber12/dat/leap/lib/all_aminoct94ildn.lib
+Loading library: /usr/local/amber12/dat/leap/lib/all_aminont94ildn.lib
+Loading library: /usr/local/amber12/dat/leap/lib/ions94.lib
+Loading library: /usr/local/amber12/dat/leap/lib/solvents.lib
+----- Source: /usr/local/amber12/dat/leap/cmd/leaprc.gaff
+----- Source of /usr/local/amber12/dat/leap/cmd/leaprc.gaff done
 Log file: ./leap.log
-Loading parameters: /usr/local/amber11/dat/leap/parm/gaff.dat
+Loading parameters: /usr/local/amber12/dat/leap/parm/gaff.dat
 Reading title:
-AMBER General Force Field for organic molecules (Version 1.4, March 2010) add. info. at the end
+AMBER General Force Field for organic molecules (Version 1.5, January 2013)
 Using H(N)-modified Bondi radii
 Loading PDB file: ../../../test/3NF8_A.modeller.pdb
   total atoms in file: 1410
@@ -46,53 +46,53 @@ Loading Mol2 file: ./ligand.gaff.mol2
 Reading MOLECULE named AVX38789_1
 Checking 'complex'....
 WARNING: The unperturbed charge of the unit: -3.000016 is not zero.
-Warning: Close contact of 0.218948 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<HG22 9>
-Warning: Close contact of 1.440785 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<CG2 7>
-Warning: Close contact of 0.385608 angstroms between .R<CGLU 366>.A<O 15> and .R<MOL 367>.A<H1 38>
-Warning: Close contact of 2.212049 angstroms between .R<CGLU 366>.A<OE1 12> and .R<GLN 180>.A<HE21 14>
-Warning: Close contact of 1.869058 angstroms between .R<CGLU 366>.A<HG3 10> and .R<GLN 180>.A<HE22 15>
-Warning: Close contact of 2.213695 angstroms between .R<CGLU 366>.A<H 2> and .R<MOL 367>.A<H4 41>
-Warning: Close contact of 0.830589 angstroms between .R<CGLU 366>.A<H 2> and .R<MOL 367>.A<C4 4>
-Warning: Close contact of 2.241345 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C24 24>
-Warning: Close contact of 0.438188 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C13 13>
-Warning: Close contact of 1.059148 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C11 11>
-Warning: Close contact of 2.148337 angstroms between .R<LYS 365>.A<HZ2 19> and .R<MOL 367>.A<C11 11>
-Warning: Close contact of 1.255304 angstroms between .R<LYS 365>.A<NZ 17> and .R<MOL 367>.A<C13 13>
-Warning: Close contact of 1.835714 angstroms between .R<LYS 365>.A<NZ 17> and .R<MOL 367>.A<C11 11>
-Warning: Close contact of 1.766433 angstroms between .R<LYS 365>.A<HE3 16> and .R<MOL 367>.A<H18 55>
-Warning: Close contact of 1.434970 angstroms between .R<LYS 365>.A<CE 14> and .R<MOL 367>.A<H18 55>
-Warning: Close contact of 0.754127 angstroms between .R<LYS 365>.A<HD2 12> and .R<MOL 367>.A<H19 56>
-Warning: Close contact of 1.963814 angstroms between .R<LYS 365>.A<CD 11> and .R<MOL 367>.A<H19 56>
-Warning: Close contact of 0.943262 angstroms between .R<LYS 365>.A<CD 11> and .R<MOL 367>.A<H18 55>
-Warning: Close contact of 2.077644 angstroms between .R<LYS 365>.A<CD 11> and .R<MOL 367>.A<C24 24>
-Warning: Close contact of 0.487606 angstroms between .R<LYS 365>.A<HG3 10> and .R<MOL 367>.A<H17 54>
-Warning: Close contact of 2.207271 angstroms between .R<LYS 365>.A<HG3 10> and .R<MOL 367>.A<N2 29>
-Warning: Close contact of 0.895038 angstroms between .R<LYS 365>.A<HG3 10> and .R<MOL 367>.A<C23 23>
-Warning: Close contact of 1.447359 angstroms between .R<LYS 365>.A<HG2 9> and .R<MOL 367>.A<H27 64>
-Warning: Close contact of 1.113715 angstroms between .R<LYS 365>.A<HG2 9> and .R<MOL 367>.A<N2 29>
-Warning: Close contact of 2.184226 angstroms between .R<LYS 365>.A<HG2 9> and .R<MOL 367>.A<C23 23>
-Warning: Close contact of 1.945522 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<H18 55>
-Warning: Close contact of 1.440771 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<H17 54>
-Warning: Close contact of 2.236633 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<N2 29>
-Warning: Close contact of 1.323129 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<C23 23>
-Warning: Close contact of 1.823427 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<H5 42>
-Warning: Close contact of 1.761321 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<C12 12>
-Warning: Close contact of 0.188553 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<C5 5>
-Warning: Close contact of 1.924364 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<C2 2>
-Warning: Close contact of 0.630526 angstroms between .R<LYS 365>.A<HB2 6> and .R<MOL 367>.A<H5 42>
-Warning: Close contact of 2.014018 angstroms between .R<LYS 365>.A<HB2 6> and .R<MOL 367>.A<C5 5>
-Warning: Close contact of 1.358182 angstroms between .R<LYS 365>.A<CB 5> and .R<MOL 367>.A<H5 42>
-Warning: Close contact of 1.162013 angstroms between .R<LYS 365>.A<CB 5> and .R<MOL 367>.A<C12 12>
-Warning: Close contact of 0.801162 angstroms between .R<LYS 365>.A<CB 5> and .R<MOL 367>.A<C5 5>
-Warning: Close contact of 1.649469 angstroms between .R<LYS 365>.A<HA 4> and .R<MOL 367>.A<C12 12>
-Warning: Close contact of 1.187483 angstroms between .R<LYS 365>.A<HA 4> and .R<MOL 367>.A<C10 10>
-Warning: Close contact of 1.644234 angstroms between .R<LYS 365>.A<CA 3> and .R<MOL 367>.A<C12 12>
-Warning: Close contact of 1.626500 angstroms between .R<THR 364>.A<H 2> and .R<GLN 363>.A<HG3 10>
-Warning: Close contact of 2.110886 angstroms between .R<GLY 347>.A<HA3 5> and .R<GLY 343>.A<H 2>
-Warning: Close contact of 1.254309 angstroms between .R<GLY 343>.A<HA3 5> and .R<LYS 342>.A<HA 4>
-Warning: Close contact of 1.258383 angstroms between .R<GLN 291>.A<HE21 14> and .R<LYS 281>.A<HZ1 18>
-Warning: Close contact of 1.881621 angstroms between .R<GLY 185>.A<H 2> and .R<NMET 184>.A<HB3 9>
-Warning: Close contact of 1.441141 angstroms between .R<GLY 160>.A<HA3 5> and .R<GLY 164>.A<HA2 4>
+Warning: Close contact of 0.467918 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<HG22 9>
+Warning: Close contact of 1.200327 angstroms between .R<CGLU 366>.A<OXT 16> and .R<THR 181>.A<CG2 7>
+Warning: Close contact of 0.620973 angstroms between .R<CGLU 366>.A<O 15> and .R<MOL 367>.A<H1 38>
+Warning: Close contact of 1.487296 angstroms between .R<CGLU 366>.A<OE1 12> and .R<GLN 180>.A<HE21 14>
+Warning: Close contact of 1.367135 angstroms between .R<CGLU 366>.A<HG3 10> and .R<GLN 180>.A<HE22 15>
+Warning: Close contact of 1.487849 angstroms between .R<CGLU 366>.A<H 2> and .R<MOL 367>.A<H4 41>
+Warning: Close contact of 0.911367 angstroms between .R<CGLU 366>.A<H 2> and .R<MOL 367>.A<C4 4>
+Warning: Close contact of 1.497112 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C24 24>
+Warning: Close contact of 0.661958 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C13 13>
+Warning: Close contact of 1.029149 angstroms between .R<LYS 365>.A<HZ3 20> and .R<MOL 367>.A<C11 11>
+Warning: Close contact of 1.465721 angstroms between .R<LYS 365>.A<HZ2 19> and .R<MOL 367>.A<C11 11>
+Warning: Close contact of 1.120403 angstroms between .R<LYS 365>.A<NZ 17> and .R<MOL 367>.A<C13 13>
+Warning: Close contact of 1.354885 angstroms between .R<LYS 365>.A<NZ 17> and .R<MOL 367>.A<C11 11>
+Warning: Close contact of 1.329072 angstroms between .R<LYS 365>.A<HE3 16> and .R<MOL 367>.A<H18 55>
+Warning: Close contact of 1.197902 angstroms between .R<LYS 365>.A<CE 14> and .R<MOL 367>.A<H18 55>
+Warning: Close contact of 0.868405 angstroms between .R<LYS 365>.A<HD2 12> and .R<MOL 367>.A<H19 56>
+Warning: Close contact of 1.401361 angstroms between .R<LYS 365>.A<CD 11> and .R<MOL 367>.A<H19 56>
+Warning: Close contact of 0.971217 angstroms between .R<LYS 365>.A<CD 11> and .R<MOL 367>.A<H18 55>
+Warning: Close contact of 1.441403 angstroms between .R<LYS 365>.A<CD 11> and .R<MOL 367>.A<C24 24>
+Warning: Close contact of 0.698288 angstroms between .R<LYS 365>.A<HG3 10> and .R<MOL 367>.A<H17 54>
+Warning: Close contact of 1.485689 angstroms between .R<LYS 365>.A<HG3 10> and .R<MOL 367>.A<N2 29>
+Warning: Close contact of 0.946064 angstroms between .R<LYS 365>.A<HG3 10> and .R<MOL 367>.A<C23 23>
+Warning: Close contact of 1.203062 angstroms between .R<LYS 365>.A<HG2 9> and .R<MOL 367>.A<H27 64>
+Warning: Close contact of 1.055327 angstroms between .R<LYS 365>.A<HG2 9> and .R<MOL 367>.A<N2 29>
+Warning: Close contact of 1.477913 angstroms between .R<LYS 365>.A<HG2 9> and .R<MOL 367>.A<C23 23>
+Warning: Close contact of 1.394820 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<H18 55>
+Warning: Close contact of 1.200321 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<H17 54>
+Warning: Close contact of 1.495538 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<N2 29>
+Warning: Close contact of 1.150273 angstroms between .R<LYS 365>.A<CG 8> and .R<MOL 367>.A<C23 23>
+Warning: Close contact of 1.350343 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<H5 42>
+Warning: Close contact of 1.327148 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<C12 12>
+Warning: Close contact of 0.434227 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<C5 5>
+Warning: Close contact of 1.387214 angstroms between .R<LYS 365>.A<HB3 7> and .R<MOL 367>.A<C2 2>
+Warning: Close contact of 0.794057 angstroms between .R<LYS 365>.A<HB2 6> and .R<MOL 367>.A<H5 42>
+Warning: Close contact of 1.419161 angstroms between .R<LYS 365>.A<HB2 6> and .R<MOL 367>.A<C5 5>
+Warning: Close contact of 1.165411 angstroms between .R<LYS 365>.A<CB 5> and .R<MOL 367>.A<H5 42>
+Warning: Close contact of 1.077967 angstroms between .R<LYS 365>.A<CB 5> and .R<MOL 367>.A<C12 12>
+Warning: Close contact of 0.895077 angstroms between .R<LYS 365>.A<CB 5> and .R<MOL 367>.A<C5 5>
+Warning: Close contact of 1.284317 angstroms between .R<LYS 365>.A<HA 4> and .R<MOL 367>.A<C12 12>
+Warning: Close contact of 1.089717 angstroms between .R<LYS 365>.A<HA 4> and .R<MOL 367>.A<C10 10>
+Warning: Close contact of 1.282277 angstroms between .R<LYS 365>.A<CA 3> and .R<MOL 367>.A<C12 12>
+Warning: Close contact of 1.275343 angstroms between .R<THR 364>.A<H 2> and .R<GLN 363>.A<HG3 10>
+Warning: Close contact of 1.452889 angstroms between .R<GLY 347>.A<HA3 5> and .R<GLY 343>.A<H 2>
+Warning: Close contact of 1.119960 angstroms between .R<GLY 343>.A<HA3 5> and .R<LYS 342>.A<HA 4>
+Warning: Close contact of 1.121777 angstroms between .R<GLN 291>.A<HE21 14> and .R<LYS 281>.A<HZ1 18>
+Warning: Close contact of 1.371722 angstroms between .R<GLY 185>.A<H 2> and .R<NMET 184>.A<HB3 9>
+Warning: Close contact of 1.200475 angstroms between .R<GLY 160>.A<HA3 5> and .R<GLY 164>.A<HA2 4>
 Checking parameters for unit 'complex'.
 Checking for bond parameters.
 Checking for angle parameters.
@@ -113,6 +113,7 @@ Building proper torsion parameters.
 Building improper torsion parameters.
  total 20 improper torsions applied
 Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
 Not Marking per-residue atom chain types.
 Marking per-residue atom chain types.
   (Residues lacking connect0/connect1 - 
@@ -136,6 +137,7 @@ Building proper torsion parameters.
 Building improper torsion parameters.
  total 1118 improper torsions applied
 Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
 Not Marking per-residue atom chain types.
 Marking per-residue atom chain types.
   (Residues lacking connect0/connect1 - 
@@ -160,6 +162,7 @@ Building proper torsion parameters.
 Building improper torsion parameters.
  total 1138 improper torsions applied
 Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
 Not Marking per-residue atom chain types.
 Marking per-residue atom chain types.
   (Residues lacking connect0/connect1 - 
