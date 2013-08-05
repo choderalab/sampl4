@@ -1027,9 +1027,9 @@ for molecule in molecules:
         ncfile.close()
 
     # Skip if we have no data.
-    if not ('vacuum' in data) or ('solvent' in data) or ('complex' in data): continue
-    
-    if (data.haskey('vacuum') and data.haskey('solvent')):
+    if not (('vacuum' in data) or ('solvent' in data) or ('complex' in data)): continue
+
+    if ('vacuum' in data) and ('solvent' in data):
         # Compute hydration free energy (free energy of transfer from vacuum to water)
         DeltaF = data['vacuum']['DeltaF'] - data['solvent']['DeltaF']
         dDeltaF = numpy.sqrt(data['vacuum']['dDeltaF']**2 + data['solvent']['dDeltaF']**2)
@@ -1046,15 +1046,16 @@ for molecule in molecules:
     fullpath = os.path.join(source_directory, phase + '.nc')
     ncfile = netcdf.Dataset(fullpath, 'r')
     DeltaF_restraints = ncfile.groups['metadata'].variables['standard_state_correction'][0]
+    data['DeltaF_restraints'] = DeltaF_restraints
     ncfile.close()
-    
+
     # Compute binding free energy (free energy of transfer from vacuum to water)
     DeltaF = data['solvent']['DeltaF'] - DeltaF_restraints - data['complex']['DeltaF']
     dDeltaF = numpy.sqrt(data['solvent']['dDeltaF']**2 + data['complex']['dDeltaF']**2)
     print ""
     print "Binding free energy : %16.3f +- %.3f kT (%16.3f +- %.3f kcal/mol)" % (DeltaF, dDeltaF, DeltaF * kT / units.kilocalories_per_mole, dDeltaF * kT / units.kilocalories_per_mole)
     print ""
-    print "DeltaG vacuum       : %16.3f +- %.3f kT" % (data['vacuum']['DeltaF'], data['vacuum']['dDeltaF'])
+    #print "DeltaG vacuum       : %16.3f +- %.3f kT" % (data['vacuum']['DeltaF'], data['vacuum']['dDeltaF'])
     print "DeltaG solvent      : %16.3f +- %.3f kT" % (data['solvent']['DeltaF'], data['solvent']['dDeltaF'])
     print "DeltaG complex      : %16.3f +- %.3f kT" % (data['complex']['DeltaF'], data['complex']['dDeltaF'])
     print "DeltaG restraint    : %16.3f          kT" % DeltaF_restraints
@@ -1068,45 +1069,84 @@ for molecule in molecules:
     # Store molecule data.
     molecule_data[molecule] = data
 
-# DEBUG
-stop
-
 # Extract sorted binding affinities.
-sorted_molecules = ['1-methylpyrrole',
-                    '1,2-dichlorobenzene',
-                    '2-fluorobenzaldehyde',
-                    '2,3-benzofuran',
-                    'benzene',
-                    'ethylbenzene',
-                    'indene',
-                    'indole',
-                    'isobutylbenzene',
-                    'n-butylbenzene',
-                    'N-methylaniline',
-                    'n-propylbenzene',
-                    'o-xylene',
-                    'p-xylene',
-                    'phenol',
-                    'toluene']
+sorted_molecules = [
+'AVX-15988_0',   
+'AVX-17257_0',   
+'AVX-17260_0',   
+'AVX-17285_0',   
+'AVX-17286_0',   
+'AVX-17287_0',   
+'AVX-17375_3',   
+'AVX-17377_0',   
+'AVX-17379_0',   
+'AVX-17389_0',   
+'AVX-17542_0',   
+'AVX-17543_0',   
+'AVX-17557_3',   
+'AVX-17558_3',   
+'AVX-17560_0',   
+'AVX-17631_0',   
+'AVX-17679_0',   
+'AVX-17680_0',   
+'AVX101118_0',   
+'AVX101119_0',   
+'AVX101121_0',   
+'AVX101122_0',   
+'AVX101124_1',   
+'AVX101140_0',   
+'AVX17587_2',   
+'AVX17715_0',   
+'AVX38672_0',   
+'AVX38673_1',   
+'AVX38674_0',   
+'AVX38708_1',   
+'AVX38741_0',   
+'AVX38742_3',   
+'AVX38743_5',   
+'AVX38747_0',   
+'AVX38748_0',   
+'AVX38749_0',   
+'AVX38753_1',   
+'AVX38779_1',   
+'AVX38780_0',   
+'AVX38781_1',   
+'AVX38782_1',   
+'AVX38783_1',   
+'AVX38784_1',   
+'AVX38785_1',   
+'AVX38786_1',   
+'AVX38787_1',   
+'AVX38788_1',   
+'AVX38789_1',   
+'AVX40811_0',   
+'AVX40812_0',   
+'AVX40911_0',   
+'GL5243-100_0',   
+'GL5243-102_0',   
+'GL5243-104_0',   
+'GL5243-106_0',   
+'GL5243-84_0',   
+'pC2-A03_0']
 
 print ""
-print "DeltaG"                                                                           
+print "DeltaG (kcal/mol)"
 for molecule in sorted_molecules:
     try:
         DeltaF = molecule_data[molecule]['solvent']['DeltaF'] - molecule_data[molecule]['DeltaF_restraints'] - molecule_data[molecule]['complex']['DeltaF']
         dDeltaF = sqrt(molecule_data[molecule]['solvent']['dDeltaF']**2 + molecule_data[molecule]['complex']['dDeltaF']**2)
-        print "%8.3f %8.3f %% %s" % (DeltaF, dDeltaF, molecule)
+        print "%8.3f %8.3f %% %s" % (DeltaF * kT / units.kilocalories_per_mole, dDeltaF * kT / units.kilocalories_per_mole, molecule)
     except:
         print "%8.3f %8.3f %% %s" % (0.0, 0.0, molecule)        
         pass
 
 print ""
-print "DeltaH"                                                                           
+print "DeltaH (kcal/mol)"
 for molecule in sorted_molecules:
     try:
         DeltaH = molecule_data[molecule]['solvent']['DeltaH'] - molecule_data[molecule]['complex']['DeltaH']
         dDeltaH = sqrt(molecule_data[molecule]['solvent']['dDeltaH']**2 + molecule_data[molecule]['complex']['dDeltaH']**2)
-        print "%8.3f %8.3f %% %s" % (DeltaH, dDeltaH, molecule)
+        print "%8.3f %8.3f %% %s" % (DeltaH * kT / units.kilocalories_per_mole, dDeltaH * kT / units.kilocalories_per_mole, molecule)
     except:
         print "%8.3f %8.3f %% %s" % (0.0, 0.0, molecule)                
         pass
