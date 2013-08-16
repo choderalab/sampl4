@@ -5,6 +5,10 @@ import os, os.path
 import shutil
 import commands
 
+#===================================================================================================================================
+# MAIN
+#===================================================================================================================================
+
 # Setup systems for YANK using Antechamber
 
 # Get ligand names.
@@ -32,22 +36,68 @@ for ligand_name in ligand_names:
     cwd = os.getcwd()
     os.chdir(system_directory)
 
-    # Run antechamber.
-    #command = 'antechamber -i ligand.mol2 -fi mol2 -o ligand.gaff.mol2 -fo mol2 -c bcc -nc 0'
-    #output = commands.getoutput(command)
-    #print output
-
-    # Run parmchk.
-    #command = 'parmchk -i ligand.gaff.mol2 -o ligand.frcmod -f mol2'
-    #output = commands.getoutput(command)
-    #print output
-
+    # Charge and parameterize ligand.
     import ligandtools
     molecule = ligandtools.readMolecule('ligand.mol2')
     gaff_mol2_filename = 'ligand.gaff.mol2'
     frcmod_filename = 'ligand.frcmod'
-    ligandtools.parameterizeForAmber(molecule, charge_model='bcc', verbose=True, resname='MOL', ligand_obj_name='molecule', frcmod_filename=frcmod_filename, gaff_mol2_filename=gaff_mol2_filename)
+    nconfs = 10
+    charged_molecule = ligandtools.assignPartialCharges(molecule, charge_model = 'am1bcc', multiconformer = nconfs, minimize_contacts = False, verbose = False)
+    ligandtools.parameterizeForAmber(charged_molecule, charge_model=None, verbose=True, resname='MOL', ligand_obj_name='molecule', frcmod_filename=frcmod_filename, gaff_mol2_filename=gaff_mol2_filename)
+
+    # Set up complex.
+    leap_template = """\
+# Set up complex for GBSA simulation with OBC model.
+
+# Load AMBER 99SB-ILDN forcefield.
+source leaprc.ff99SBildn
+
+# Load GAFF parameters.
+source leaprc.gaff
+
+# Set GB radii to recommended values for OBC.
+set default PBRadii mbondi2 
+
+# Load in protein.
+receptor_A = loadPdb ../../../test/3NF8_A.modeller.pdb
+receptor_B = loadPdb ../../../test/3NF8_B.modeller.pdb
+receptor = combine { receptor_A receptor_B }
+
+# Load parameters for ligand.
+loadAmberParams ligand.frcmod
+
+# Load ligand.
+ligand = loadMol2 ligand.gaff.mol2
+
+# Create complex.
+complex = combine { receptor ligand }
+
+# Check complex.
+check complex
+
+# Report on net charge.
+charge complex
+
+# Write parameters.
+saveAmberParm ligand ligand.prmtop ligand.crd
+saveAmberParm receptor receptor.prmtop receptor.crd
+saveAmberParm complex complex.prmtop complex.crd
+
+# Exit
+quit
+    """
+    outfile = open('setup.leap.in', 'w')
+    outfile.write(leap_template)
+    outfile.close()
+    command = 'tleap -f setup.leap.in >& setup.leap.out'
+    output = commands.getoutput(command)
+
+    # Generate PDB files
+    for prefix in ['complex', 'ligand', 'receptor']:
+        command = 'cat %s.crd | ambpdb -p %s.prmtop > %s.pdb' % (prefix, prefix, prefix)
+        output = commands.getoutput(command)
+        print output
+    
     # Restore original directory.
     os.chdir(cwd)
-    
-    
+
