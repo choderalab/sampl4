@@ -1,0 +1,4 @@
+srun: init: Gres GPU plugin loaded
+application called MPI_Abort(comm=0x84000002, 0) - process 1
+application called MPI_Abort(comm=0x84000002, 0) - process 2
+application called MPI_Abort(comm=0x84000002, 0) - process 3

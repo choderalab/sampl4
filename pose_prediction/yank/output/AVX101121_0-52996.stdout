@@ -1,0 +1,368 @@
+REMOTEHOST=cpe-66-108-94-177.nyc.res.rr.com
+LDFLAGS=-L/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64/lib
+HOSTNAME=gpu-2-16
+YANKHOME=/nics/a/proj/yank/yank/
+HOST=gpu-2-16.local
+TERM=xterm
+SHELL=/bin/tcsh
+SSH_CLIENT=66.108.94.177 38275 22
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/7
+ANT_HOME=/opt/rocks
+CUDA_HOME=/usr/local/cuda-5.5
+GROUP=jclab
+USER=chodera
+LD_LIBRARY_PATH=/cbio/jclab/share/openmm-git/install/lib:/cbio/jclab/share/openmm-git/install/lib/plugins/:/usr/local/cuda-5.5/lib64:/opt/gnu/gcc/4.8.1/lib64:/opt/gnu/gcc/4.8.1/lib:/opt/gnu/gmp/lib:/opt/gnu/mpc/lib:/opt/gnu/mpfr/lib:/usr/local/cuda-5.5/lib:/opt/cuda-5.5/lib64
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+CHODERALAB=/cbio/jclab/share
+ROCKS_ROOT=/opt/rocks
+OPENMM_SOURCE_DIR=/cbio/jclab/share/openmm-git/OpenMM/
+CANOPY_HOME=/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64
+HOSTTYPE=x86_64-linux
+OPENMM_HOME=/cbio/jclab/share/openmm-git
+CXXFLAGS=-fPIC
+OPENCL_INCLUDE_DIR=/usr/local/cuda-5.5/include
+MAIL=/var/spool/mail/chodera
+PATH=/cbio/jclab/share/swig/install/bin:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64/bin:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64/bin:/cbio/jclab/share/swig/install/bin:/cbio/jclab/share/swig/install/bin:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64/bin:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64:/cbio/jclab/share/canopy/canopy-1.0.0-rh5/appdata/canopy-1.0.0.1160.rh5-x86_64/bin:/cbio/jclab/share/swig/install/bin:/opt/cmake/bin:/usr/local/cuda-5.5/bin:/opt/mpich2/gcc/eth/bin:/opt/gnu/gcc/4.8.1/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/java/latest/bin:/opt/pdsh/bin:/opt/rocks/bin
+OPENMM_LIB_PATH=/cbio/jclab/share/openmm-git/install/lib
+PWD=/cbio/jclab/home/chodera/sampl4/pose_prediction/yank
+_LMFILES_=/etc/modulefiles/gcc/4.8.1:/etc/modulefiles/mpich2_eth/1.5:/etc/modulefiles/cuda/5.5:/etc/modulefiles/cmake/2.8.10.2
+JAVA_HOME=/usr/java/latest
+EDITOR=emacs -nw -bg black -fg white
+LANG=en_US.iso885915
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=gcc/4.8.1:mpich2_eth/1.5:cuda/5.5:cmake/2.8.10.2
+OPENMM_INCLUDE_PATH=/cbio/jclab/share/openmm-git/install/include
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+OPENMM_CUDA_COMPILER=/usr/local/cuda-5.5/bin/nvcc
+SHLVL=3
+HOME=/cbio/jclab/home/chodera
+OSTYPE=linux
+CFLAGS=-fPIC
+MPIHOME=/opt/mpich2/gcc/eth
+VENDOR=unknown
+PYTHONPATH=/cbio/jclab/share/openmm-git/install/lib/python2.7/site-packages:
+MACHTYPE=x86_64
+LOGNAME=chodera
+OPENMM_PLUGIN_DIR=/cbio/jclab/share/openmm-git/install/lib/plugins/
+QTLIB=/usr/lib64/qt-3.3/lib
+SSH_CONNECTION=66.108.94.177 38275 10.241.31.248 22
+MODULESHOME=/usr/share/Modules
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+OPENMM_INSTALL_DIR=/cbio/jclab/share/openmm-git/install
+G_BROKEN_FILENAMES=1
+_=/usr/bin/sbatch
+SLURM_NTASKS_PER_NODE=6
+SLURM_JOB_NAME=AVX101121_0
+SLURM_PRIO_PROCESS=0
+SLURM_SUBMIT_DIR=/cbio/jclab/home/chodera/sampl4/pose_prediction/yank
+SLURM_SUBMIT_HOST=mskcc-ln1.local
+SLURM_JOB_ID=52996
+SLURM_JOB_NUM_NODES=1
+SLURM_JOB_NODELIST=gpu-2-16
+SLURM_NODE_ALIASES=(null)
+SLURM_JOB_CPUS_PER_NODE=6
+ENVIRONMENT=BATCH
+SLURM_JOBID=52996
+SLURM_NNODES=1
+SLURM_NODELIST=gpu-2-16
+SLURM_TASKS_PER_NODE=6
+SLURM_MEM_PER_CPU=0
+CUDA_VISIBLE_DEVICES=0,2,4,6
+SLURM_TOPOLOGY_ADDR=gpu-2-16
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+TMPDIR=/tmp
+SLURM_TASK_PID=488
+SLURM_CPUS_ON_NODE=6
+SBATCH_CPU_BIND_VERBOSE=quiet
+SBATCH_CPU_BIND_TYPE=mask_cpu:
+SBATCH_CPU_BIND_LIST=0x00070007
+SBATCH_CPU_BIND=quiet,mask_cpu:0x00070007
+SLURM_NODEID=0
+SLURM_PROCID=0
+SLURM_LOCALID=0
+SLURM_GTIDS=0
+SLURM_CHECKPOINT_IMAGE_DIR=/cbio/jclab/home/chodera/sampl4/pose_prediction/yank
+SLURMD_NODENAME=gpu-2-16
+Tue Aug 13 18:21:22 PDT 2013
+Tue Aug 13 18:21:22 PDT 2013
+CUDA_HOME=/usr/local/cuda-5.5
+OPENMM_CUDA_COMPILER=/usr/local/cuda-5.5/bin/nvcc
+CUDA_VISIBLE_DEVICES=0,1,2,3
+Initialized MPI on 6 processes.
+Reading cooordinate sets from 'complex.crd'...
+node 'gpu-2-16.local' MPI_WORLD rank 5/6 running on CPU
+node 'gpu-2-16.local' MPI_WORLD rank 3/6 cpuid 3 platform OpenCL deviceid 3
+node 'gpu-2-16.local' MPI_WORLD rank 1/6 cpuid 1 platform OpenCL deviceid 1
+node 'gpu-2-16.local' MPI_WORLD rank 4/6 running on CPU
+node 'gpu-2-16.local' MPI_WORLD rank 2/6 cpuid 2 platform OpenCL deviceid 2
+node 'gpu-2-16.local' MPI_WORLD rank 0/6 cpuid 0 platform OpenCL deviceid 0
+Running on cpu (node gpu-2-16.local, rank 4 / 6)
+Running on cpu (node gpu-2-16.local, rank 5 / 6)
+Attempting to resume by reading thermodynamic states and options...
+Attempting to resume by reading thermodynamic states and options...
+Attempting to resume by reading thermodynamic states and options...Attempting to resume by reading thermodynamic states and options...
+
+Restoring thermodynamic states from NetCDF file...
+Attempting to resume by reading thermodynamic states and options...
+Attempting to resume by reading thermodynamic states and options...
+Node 0 / 2 creating Context for state 0...Node 1 / 2 creating Context for state 1...
+
+Node 1 / 2: Using platform Reference
+Node 0 / 2: Using platform Reference
+Node 0 / 2: Context creation took 0.001 s
+Node 0 / 2 creating Context for state 2...
+Node 0 / 2: Using platform Reference
+Node 1 / 2: Context creation took 0.029 s
+Node 1 / 2 creating Context for state 3...
+Node 1 / 2: Using platform Reference
+Node 0 / 2: Context creation took 0.029 s
+Node 0 / 2 creating Context for state 4...
+Node 0 / 2: Using platform Reference
+Node 1 / 2: Context creation took 0.036 s
+Note 1 / 2: Context creation done.  Waiting for MPI barrier...
+Node 0 / 2: Context creation took 0.037 s
+Note 0 / 2: Context creation done.  Waiting for MPI barrier...
+Barrier complete.Barrier complete.
+
+Restoring thermodynamic states from NetCDF file took 54.851 s.
+Attempting to restore options from NetCDF file...
+Restoring option: collision_rate -> 5.0 /ps (type: <class 'simtk.unit.quantity.Quantity'>)
+Restoring option: constraint_tolerance -> 1e-06 (type: <type 'float'>)
+Restoring option: timestep -> 2.0 fs (type: <class 'simtk.unit.quantity.Quantity'>)
+Restoring option: nsteps_per_iteration -> 1250 (type: <type 'int'>)
+Restoring option: number_of_iterations -> 10000 (type: <type 'int'>)
+Restoring option: equilibration_timestep -> 1.0 fs (type: <class 'simtk.unit.quantity.Quantity'>)
+Restoring option: number_of_equilibration_iterations -> 1 (type: <type 'int'>)
+Restoring option: title -> Modified Hamiltonian exchange simulation created using HamiltonianExchange class of repex.py on Sat Aug 10 15:11:06 2013 (type: <type 'str'>)
+Restoring option: minimize -> True (type: <type 'bool'>)
+Restoring option: replica_mixing_scheme -> swap-all (type: <type 'str'>)
+Restoring option: online_analysis -> False (type: <type 'bool'>)
+Restoring option: verbose -> True (type: <type 'bool'>)
+Restoring option: show_mixing_statistics -> False (type: <type 'bool'>)
+Restoring option: mc_displacement -> True (type: <type 'bool'>)
+Restoring option: mc_rotation -> True (type: <type 'bool'>)
+Restoring option: displacement_sigma -> 1.0 nm (type: <class 'simtk.unit.quantity.Quantity'>)
+from protocol: collision_rate -> 5.0 /ps
+from protocol: verbose -> True
+from protocol: minimize -> True
+from protocol: number_of_equilibration_iterations -> 1
+from protocol: number_of_iterations -> 10000
+from protocol: show_mixing_statistics -> False
+from protocol: timestep -> 2.0 fs
+from protocol: minimize_maxIterations -> 500
+Initialized node 0 / 4
+Please cite the following:
+
+        Friedrichs MS, Eastman P, Vaidyanathan V, Houston M, LeGrand S, Beberg AL, Ensign DL, Bruns CM, and Pande VS. Accelerating molecular dynamic simulations on graphics processing units. J. Comput. Chem. 30:864, 2009. DOI: 10.1002/jcc.21209
+        Eastman P and Pande VS. OpenMM: A hardware-independent framework for molecular simulations. Comput. Sci. Eng. 12:34, 2010. DOI: 10.1109/MCSE.2010.27
+        Eastman P and Pande VS. Efficient nonbonded interactions for molecular dynamics on a graphics processing unit. J. Comput. Chem. 31:1268, 2010. DOI: 10.1002/jcc.21413
+        Eastman P and Pande VS. Constant constraint matrix approximation: A robust, parallelizable constraint method for molecular simulations. J. Chem. Theor. Comput. 6:434, 2010. DOI: 10.1021/ct900463w
+        Chodera JD and Shirts MR. Replica exchange and expanded ensemble simulations as Gibbs sampling: Simple improvements for enhanced mixing. J. Chem. Phys., in press. arXiv: 1105.5749
+        Chodera JD, Shirts MR, Wang K, Friedrichs MS, Eastman P, Pande VS, and Branson K. YANK: An extensible platform for GPU-accelerated free energy calculations. In preparation.
+
+Creating and caching Context objects...
+Node 0 / 4 creating Context for state 0...
+Node 0 / 4: Using platform OpenCL
+from protocol: collision_rate -> 5.0 /ps
+from protocol: verbose -> False
+Node 3 / 4 creating Context for state 3...
+Node 3 / 4: Using platform OpenCL
+from protocol: collision_rate -> 5.0 /ps
+from protocol: verbose -> False
+Node 1 / 4 creating Context for state 1...
+Node 1 / 4: Using platform OpenCL
+from protocol: collision_rate -> 5.0 /ps
+from protocol: verbose -> False
+Node 2 / 4 creating Context for state 2...
+Node 2 / 4: Using platform OpenCL
+Node 2 / 4: Context creation took 6.417 s
+Node 2 / 4 creating Context for state 6...
+Node 2 / 4: Using platform OpenCL
+Node 1 / 4: Context creation took 11.066 s
+Node 1 / 4 creating Context for state 5...
+Node 1 / 4: Using platform OpenCL
+Node 0 / 4: Context creation took 14.731 s
+Node 0 / 4 creating Context for state 4...
+Node 0 / 4: Using platform OpenCL
+Node 3 / 4: Context creation took 18.188 s
+Node 3 / 4 creating Context for state 7...
+Node 3 / 4: Using platform OpenCL
+Node 2 / 4: Context creation took 12.457 s
+Node 2 / 4 creating Context for state 10...
+Node 2 / 4: Using platform OpenCL
+Node 1 / 4: Context creation took 14.405 s
+Node 1 / 4 creating Context for state 9...
+Node 1 / 4: Using platform OpenCL
+Node 0 / 4: Context creation took 15.722 s
+Node 0 / 4 creating Context for state 8...
+Node 0 / 4: Using platform OpenCL
+Node 3 / 4: Context creation took 14.478 s
+Node 3 / 4 creating Context for state 11...
+Node 3 / 4: Using platform OpenCL
+Node 2 / 4: Context creation took 10.993 s
+Node 2 / 4 creating Context for state 14...
+Node 2 / 4: Using platform OpenCL
+Node 0 / 4: Context creation took 8.234 s
+Node 0 / 4 creating Context for state 12...
+Node 0 / 4: Using platform OpenCL
+Node 1 / 4: Context creation took 10.634 s
+Node 1 / 4 creating Context for state 13...
+Node 1 / 4: Using platform OpenCL
+Node 3 / 4: Context creation took 10.524 s
+Node 3 / 4 creating Context for state 15...
+Node 3 / 4: Using platform OpenCL
+Node 2 / 4: Context creation took 11.239 s
+Node 2 / 4 creating Context for state 18...
+Node 2 / 4: Using platform OpenCL
+Node 0 / 4: Context creation took 10.078 s
+Node 0 / 4 creating Context for state 16...
+Node 0 / 4: Using platform OpenCL
+Node 1 / 4: Context creation took 9.743 s
+Node 1 / 4 creating Context for state 17...
+Node 1 / 4: Using platform OpenCL
+Node 2 / 4: Context creation took 6.176 s
+Node 2 / 4 creating Context for state 22...
+Node 2 / 4: Using platform OpenCL
+Node 3 / 4: Context creation took 9.105 s
+Node 3 / 4 creating Context for state 19...
+Node 3 / 4: Using platform OpenCL
+Node 0 / 4: Context creation took 4.997 s
+Node 0 / 4 creating Context for state 20...
+Node 0 / 4: Using platform OpenCL
+Node 1 / 4: Context creation took 7.565 s
+Node 1 / 4 creating Context for state 21...
+Node 1 / 4: Using platform OpenCL
+Node 3 / 4: Context creation took 9.865 s
+Node 3 / 4 creating Context for state 23...
+Node 3 / 4: Using platform OpenCL
+Node 2 / 4: Context creation took 12.743 s
+Node 2 / 4 creating Context for state 26...
+Node 2 / 4: Using platform OpenCL
+Node 0 / 4: Context creation took 12.057 s
+Node 0 / 4 creating Context for state 24...
+Node 0 / 4: Using platform OpenCL
+Node 3 / 4: Context creation took 4.958 s
+Node 3 / 4 creating Context for state 27...
+Node 3 / 4: Using platform OpenCL
+Node 1 / 4: Context creation took 11.861 s
+Node 1 / 4 creating Context for state 25...
+Node 1 / 4: Using platform OpenCL
+Node 2 / 4: Context creation took 8.351 s
+Note 2 / 4: Context creation done.  Waiting for MPI barrier...
+Node 0 / 4: Context creation took 9.927 s
+Note 0 / 4: Context creation done.  Waiting for MPI barrier...
+Node 1 / 4: Context creation took 8.298 s
+Note 1 / 4: Context creation done.  Waiting for MPI barrier...
+Node 3 / 4: Context creation took 12.139 s
+Note 3 / 4: Context creation done.  Waiting for MPI barrier...
+Barrier complete.Barrier complete.
+Barrier complete.
+Barrier complete.
+79.302 s elapsed.
+
+Reading NetCDF file './complex.nc'...
+iteration = 451, nstates = 28, natoms = 5655
+reduced potential (kT)      current state  state   0  state   1  state   2  state   3  state   4  state   5  state   6  state   7  state   8  state   9  state  10  state  11  state  12  state  13  state  14  state  15  state  16  state  17  state  18  state  19  state  20  state  21  state  22  state  23  state  24  state  25  state  26  state  27 
+replica 0                              10   -11085.3   -11085.3   -11085.3   -11066.0   -11048.1   -11031.5   -11016.4   -11003.0   -10991.8   -10978.7   -10982.5   -10977.3   -10974.0   -10970.6   -10963.3   -10956.0   -10949.0   -10942.4   -10939.3   -10936.4   -10930.8   -10925.9   -10921.4   -10913.9   -10903.3   -10896.9   -10896.9   -10896.9 
+replica 1                              23   -10091.0   -10091.0   -10091.0   -10080.8   -10069.3   -10057.1   -10045.3   -10034.5   -10025.6   -10016.1   -10023.6   -10441.1   -10571.1   -10667.3   -10791.6   -10860.3   -10898.2   -10918.6   -10924.8   -10929.1   -10933.9   -10935.6   -10935.4   -10932.7   -10925.9   -10921.0   -10921.0   -10921.0 
+replica 2                               0   -11050.9   -11050.9   -11050.9   -11021.3   -10993.9   -10968.9   -10946.3   -10926.4   -10909.6   -10887.9   -10886.3   -10884.6   -10883.0   -10881.1   -10876.8   -10872.0   -10867.3   -10862.8   -10860.7   -10858.6   -10854.7   -10851.3   -10848.1   -10842.9   -10835.7   -10831.4   -10831.4   -10831.4 
+replica 3                               3   -11011.9   -11011.9   -11011.9   -10984.6   -10960.5   -10939.1   -10920.2   -10903.8   -10890.2   -10873.1   -10873.6   -10867.6   -10863.8   -10859.6   -10850.8   -10842.0   -10833.4   -10825.4   -10821.6   -10817.9   -10811.2   -10805.1   -10799.7   -10790.6   -10777.8   -10770.3   -10770.3   -10770.3 
+replica 4                              14   -10979.1   -10979.1   -10979.1   -10962.1   -10945.4   -10929.4   -10914.6   -10901.3   -10890.1   -10876.5   -10879.6   -10891.8   -10894.9   -10896.6   -10897.0   -10894.9   -10891.4   -10887.4   -10885.3   -10883.2   -10879.1   -10875.2   -10871.6   -10865.4   -10856.5   -10851.2   -10851.2   -10851.2 
+replica 5                              21   -10857.9   -10857.9   -10857.9   -10838.3   -10819.2   -10801.1   -10784.5   -10769.7   -10757.4   -10742.8   -10746.4   -10779.6   -10790.1   -10797.8   -10807.1   -10811.2   -10812.2   -10811.4   -10810.7   -10809.7   -10807.6   -10805.2   -10802.9   -10798.6   -10792.1   -10788.0   -10788.0   -10788.0 
+replica 6                               9   -10982.2   -10982.2   -10982.2   -10974.2   -10965.2   -10955.8   -10946.6   -10938.2   -10931.1   -10923.6   -10930.4   -10924.3   -10920.4   -10916.0   -10906.8   -10897.5   -10888.4   -10879.8   -10875.8   -10872.0   -10864.8   -10858.3   -10852.5   -10842.7   -10829.1   -10821.0   -10821.0   -10821.0 
+replica 7                               1   -11020.7   -11020.7   -11020.7   -10991.2   -10964.2   -10939.4   -10916.9   -10897.0   -10880.1   -10857.7   -10855.1   -10853.2   -10851.5   -10849.4   -10844.6   -10839.5   -10834.3   -10829.4   -10827.1   -10824.8   -10820.6   -10816.7   -10813.3   -10807.5   -10799.3   -10794.4   -10794.4   -10794.4 
+replica 8                              18   -10757.0   -10757.0   -10757.0   -10744.0   -10731.0   -10718.4   -10706.6   -10696.1   -10687.4   -10677.9   -10684.1   -10726.9   -10740.5   -10750.4   -10762.3   -10767.1   -10767.9   -10766.3   -10765.0   -10763.5   -10760.0   -10756.4   -10752.9   -10746.4   -10736.8   -10730.9   -10730.9   -10730.9 
+replica 9                               7   -10818.0   -10818.0   -10818.0   -10803.2   -10788.2   -10773.4   -10759.4   -10746.4   -10735.1   -10720.1   -10720.8   -10714.1   -10710.1   -10705.9   -10697.0   -10688.1   -10679.7   -10671.7   -10668.0   -10664.4   -10657.8   -10651.9   -10646.5   -10637.6   -10625.0   -10617.5   -10617.5   -10617.5 
+replica 10                             16   -10999.0   -10999.0   -10999.0   -10983.5   -10967.8   -10952.4   -10937.9   -10924.6   -10913.3   -10899.6   -10903.4   -10911.2   -10912.9   -10913.7   -10913.1   -10910.9   -10907.8   -10904.4   -10902.6   -10900.9   -10897.5   -10894.4   -10891.4   -10886.4   -10879.1   -10874.7   -10874.7   -10874.7 
+replica 11                              5   -11057.7   -11057.7   -11057.7   -11035.3   -11013.7   -10993.0   -10973.9   -10956.8   -10942.3   -10923.9   -10924.7   -10922.9   -10921.4   -10919.6   -10915.6   -10911.3   -10907.1   -10903.0   -10901.1   -10899.3   -10895.8   -10892.6   -10889.8   -10885.0   -10878.2   -10874.2   -10874.2   -10874.2 
+replica 12                             11   -10877.8   -10877.8   -10877.8   -10865.9   -10853.5   -10841.0   -10828.9   -10817.7   -10808.0   -10796.3   -10800.2   -10801.0   -10800.1   -10798.6   -10794.4   -10789.4   -10784.1   -10779.0   -10776.5   -10774.1   -10769.5   -10765.3   -10761.6   -10755.1   -10746.0   -10740.6   -10740.6   -10740.6 
+replica 13                             12   -11072.5   -11072.5   -11072.5   -11060.7   -11048.7   -11037.1   -11026.2   -11016.5   -11008.5   -11001.0   -11009.9   -11009.7   -11008.4   -11006.4   -11001.5   -10995.9   -10990.1   -10984.4   -10981.7   -10979.0   -10974.0   -10969.5   -10965.4   -10958.5   -10948.7   -10942.9   -10942.9   -10942.9 
+replica 14                             19   -10769.6   -10769.6   -10769.6   -10759.9   -10749.9   -10739.8   -10730.1   -10721.2   -10713.7   -10705.3   -10710.7   -10801.7   -10831.3   -10853.4   -10881.3   -10895.0   -10900.0   -10900.1   -10899.0   -10897.4   -10893.3   -10888.5   -10883.5   -10874.2   -10860.0   -10851.4   -10851.4   -10851.4 
+replica 15                             26  1.974e+10  1.974e+10  1.974e+10  1.974e+10  1.974e+10  1.974e+10  1.974e+10  1.974e+10  1.974e+10  1.974e+10  1.974e+10  2.486e+09  1.006e+09  4.366e+08  9.737e+07  2.596e+07  7.932e+06  2.696e+06  1.624e+06   995253.7   390132.3   158277.5    63811.7     5203.9   -10023.3   -10855.3   -10855.3   -10855.3 
+replica 16                             15   -10911.2   -10911.2   -10911.2   -10898.0   -10885.2   -10872.9   -10861.5   -10851.2   -10842.7   -10834.1   -10842.1   -10851.5   -10853.6   -10854.7   -10854.4   -10852.1   -10848.8   -10845.1   -10843.2   -10841.3   -10837.7   -10834.2   -10831.1   -10825.6   -10817.8   -10813.1   -10813.1   -10813.1 
+replica 17                             20   -10776.8   -10776.8   -10776.8   -10769.2   -10760.5   -10751.6   -10743.0   -10735.5   -10729.5   -10725.0   -10736.0   -10809.9   -10833.7   -10851.3   -10873.4   -10884.1   -10888.0   -10888.1   -10887.3   -10886.1   -10882.9   -10879.3   -10875.6   -10868.6   -10858.0   -10851.6   -10851.6   -10851.6 
+replica 18                              8   -11103.7   -11103.7   -11103.7   -11082.1   -11062.4   -11044.4   -11028.1   -11013.8   -11001.8   -10987.4   -10990.5   -10985.4   -10982.3   -10978.8   -10971.6   -10964.3   -10957.3   -10950.7   -10947.6   -10944.6   -10939.1   -10934.2   -10929.7   -10922.3   -10911.9   -10905.7   -10905.7   -10905.7 
+replica 19                             17   -10646.2   -10646.2   -10646.2   -10635.5   -10624.3   -10613.1   -10602.7   -10593.5   -10586.0   -10578.9   -10587.0   -10680.3   -10710.0   -10732.1   -10759.8   -10773.5   -10779.0   -10779.9   -10779.3   -10778.2   -10775.2   -10771.5   -10767.7   -10760.5   -10749.3   -10742.6   -10742.6   -10742.6 
+replica 20                              2   -11004.4   -11004.4   -11004.4   -10976.8   -10951.2   -10927.5   -10906.0   -10887.1   -10871.4   -10851.6   -10852.2   -10847.9   -10845.7   -10843.4   -10838.9   -10834.5   -10830.4   -10826.7   -10825.0   -10823.3   -10820.2   -10817.5   -10815.0   -10810.9   -10805.1   -10801.6   -10801.6   -10801.6 
+replica 21                             25        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan 
+replica 22                              4   -10988.7   -10988.7   -10988.7   -10962.5   -10938.3   -10916.2   -10896.4   -10879.2   -10865.1   -10848.7   -10852.7   -10848.2   -10845.8   -10843.3   -10838.3   -10833.6   -10829.1   -10825.0   -10823.1   -10821.3   -10818.0   -10815.0   -10812.4   -10808.0   -10802.0   -10798.5   -10798.5   -10798.5 
+replica 23                             13   -11076.4   -11076.4   -11076.4   -11057.1   -11039.1   -11022.6   -11007.8   -10994.6   -10983.7   -10971.0   -10975.4   -10971.8   -10969.3   -10966.4   -10960.2   -10953.8   -10947.5   -10941.6   -10938.8   -10936.1   -10931.0   -10926.5   -10922.4   -10915.4   -10905.7   -10899.8   -10899.8   -10899.8 
+replica 24                             24   -11200.4   -11200.4   -11200.4   -11174.2   -11149.7   -11126.8   -11106.1   -11088.1   -11073.3   -11056.1   -11060.8   -11060.8   -11060.7   -11060.7   -11060.7   -11060.6   -11060.6   -11060.6   -11060.6   -11060.6   -11060.5   -11060.5   -11060.5   -11060.4   -11060.3   -11060.3   -11060.3   -11060.3 
+replica 25                             27  1.981e+10  1.981e+10  1.981e+10  1.981e+10  1.981e+10  1.981e+10  1.981e+10  1.981e+10  1.981e+10  1.981e+10  1.981e+10  2.659e+09  1.088e+09  4.727e+08  1.038e+08  2.680e+07  7.872e+06  2.563e+06  1.509e+06   904502.3   338601.8   130637.7    49307.2     1360.2   -10091.7   -10651.4   -10651.4   -10651.4 
+replica 26                              6   -11057.5   -11057.5   -11057.5   -11034.4   -11013.0   -10993.0   -10974.8   -10958.5   -10944.8   -10927.4   -10928.5   -10925.0   -10922.8   -10920.5   -10915.5   -10910.5   -10905.7   -10901.1   -10899.0   -10897.0   -10893.1   -10889.7   -10886.6   -10881.4   -10874.1   -10898.7   -10869.7   -10869.7 
+replica 27                             22   -10484.3   -10484.3   -10484.3   -10465.2   -10447.9   -10432.4   -10418.5   -10406.4   -10396.4   -10385.2   -10390.7   -10563.7   -10620.2   -10662.9   -10719.4   -10750.7   -10767.4   -10775.3   -10777.2   -10778.2   -10778.2   -10776.6   -10774.2   -10768.7   -10759.0   -10752.6   -10752.6   -10752.6 
+
+Iteration 453 / 10000
+Mixing replicas...
+Will attempt to swap all pairs of replicas using weave-accelerated code, using a total of 17210368 attempts.
+Accepted 2898590 / 32005776 attempted swaps (9.1 %)
+Sharing state information...
+Mixing of replicas took 1.822 s
+Propagating all replicas for 2.500 ps...
+Running trajectories...
+Node   0/  4 propagating replica  20 state   0...
+Replica 20/28: integrator elapsed time 5.468 s (positions 0.004 s | velocities 0.431 s | integrate+getstate 4.992 s).
+Node   0/  4 propagating replica  11 state   4...
+Replica 11/28: integrator elapsed time 7.956 s (positions 0.004 s | velocities 0.413 s | integrate+getstate 7.497 s).
+Node   0/  4 propagating replica   9 state   8...
+Replica 9/28: integrator elapsed time 7.957 s (positions 0.004 s | velocities 0.414 s | integrate+getstate 7.498 s).
+Node   0/  4 propagating replica  23 state  12...
+Replica 23/28: integrator elapsed time 8.725 s (positions 0.004 s | velocities 0.415 s | integrate+getstate 8.265 s).
+Node   0/  4 propagating replica   4 state  16...
+Replica 4/28: integrator elapsed time 8.724 s (positions 0.004 s | velocities 0.414 s | integrate+getstate 8.265 s).
+Node   0/  4 propagating replica  19 state  20...
+Replica 19/28: integrator elapsed time 8.725 s (positions 0.004 s | velocities 0.415 s | integrate+getstate 8.265 s).
+Node   0/  4 propagating replica  24 state  24...
+Replica 24/28: integrator elapsed time 8.725 s (positions 0.004 s | velocities 0.414 s | integrate+getstate 8.266 s).
+Running trajectories: elapsed time 59.213 s (barrier time min -0.001 s | max 2.083 s | avg 0.972 s)
+Total time spent waiting for GPU: 232.963 s
+Synchronizing trajectories...
+Synchronizing configurations and box vectors: elapsed time 0.016 s
+Time to propagate all replicas: 59.230 s (2.115 per replica, 102.111 ns/day).
+Rotation and displacement MC trial times consumed 0.843 s (1 translation | 1 rotation accepted)
+Computing energies...
+Time to compute all energies 2.538 s (0.003 per energy calculation).
+reduced potential (kT)      current state  state   0  state   1  state   2  state   3  state   4  state   5  state   6  state   7  state   8  state   9  state  10  state  11  state  12  state  13  state  14  state  15  state  16  state  17  state  18  state  19  state  20  state  21  state  22  state  23  state  24  state  25  state  26  state  27 
+replica 0                               7   -10900.7   -10900.7   -10900.7   -10881.4   -10863.8nan encountered in replica 21 coordinates.
+   -10847.6   -10832.9   -10820.1nan encountered in replica 21 coordinates.
+nan encountered in replica 21 coordinates.   -10809.3
+   -10796.8   -10800.5   -10792.9   -10788.8   -10784.4nan encountered in u_kl state energies   -10775.6
+   -10767.1   -10759.0   -10751.5nan encountered in u_kl state energies
+   -10748.0   -10744.7   -10738.5 nan encountered in u_kl state energies
+  -10733.0   -10728.0   -10719.7   -10708.0   -10701.1   -10701.1   -10701.1 
+replica 1                              23    -9891.0    -9891.0    -9891.0    -9878.1    -9863.9    -9849.2    -9834.9    -9821.9    -9810.8    -9797.8    -9802.4   -10319.6   -10487.0   -10613.5   -10782.1   -10879.3   -10935.1   -10966.9   -10977.0   -10984.5   -10993.7   -10998.0   -10999.5   -10998.3   -10992.0   -10987.0   -10987.0   -10987.0 
+replica 2                               1   -11005.5   -11005.5   -11005.5   -10976.5   -10949.8   -10925.5   -10903.6   -10884.3   -10868.0   -10846.8   -10845.3   -10844.0   -10842.4   -10840.5   -10835.8   -10830.8   -10825.6   -10820.7   -10818.4   -10816.1   -10811.9   -10808.1   -10804.7   -10798.9   -10791.0   -10786.4   -10786.4   -10786.4 
+replica 3                               5   -10932.3   -10932.3   -10932.3   -10906.9   -10883.8   -10863.0   -10844.5   -10828.3   -10814.8   -10798.1   -10799.3   -10791.1   -10786.6   -10782.0   -10772.8   -10763.8   -10755.4   -10747.6   -10744.0   -10740.5   -10734.2   -10728.4   -10723.3   -10714.7   -10702.8   -10695.7   -10695.7   -10695.7 
+replica 4                              16   -10986.0   -10986.0   -10986.0   -10971.3   -10956.2   -10941.3   -10927.1   -10914.2   -10903.2   -10890.0   -10893.4   -10900.5   -10901.8   -10902.0   -10900.3   -10896.8   -10892.4   -10887.7   -10885.4   -10883.1   -10878.7   -10874.6   -10870.8   -10864.3   -10855.2   -10849.8   -10849.8   -10849.8 
+replica 5                              21   -10466.0   -10466.0   -10466.0   -10449.1   -10432.4   -10416.4   -10401.6   -10388.4   -10377.4   -10364.2   -10367.8   -10551.9   -10612.3   -10658.1   -10718.9   -10753.2   -10771.8   -10781.2   -10783.7   -10785.1   -10785.9   -10785.0   -10783.1   -10778.3   -10769.6   -10764.0   -10764.0   -10764.0 
+replica 6                              10   -10991.1   -10991.1   -10991.1   -10977.4   -10964.0   -10951.2   -10939.4   -10928.9   -10920.0   -10909.9   -10915.1   -10907.7   -10903.3   -10898.8   -10889.4   -10880.1   -10871.2   -10863.0   -10859.1   -10855.4   -10848.5   -10842.3   -10836.8   -10827.5   -10814.5   -10806.8   -10806.8   -10806.8 
+replica 7                               2   -11062.2   -11062.2   -11062.2   -11033.1   -11006.2   -10981.6   -10959.5   -10940.0   -10923.6   -10902.4   -10901.0   -10897.7   -10895.4   -10892.9   -10887.5   -10882.0   -10876.5   -10871.4   -10869.0   -10866.7   -10862.4   -10858.5   -10855.0   -10849.0   -10840.8   -10835.9   -10835.9   -10835.9 
+replica 8                              18   -10825.5   -10825.5   -10825.5   -10807.2   -10789.2   -10772.1   -10756.3   -10742.2   -10730.3   -10716.3   -10720.4   -10735.2   -10739.4   -10742.1   -10744.4   -10744.1   -10742.2   -10739.6   -10738.2   -10736.7   -10733.7   -10730.8   -10728.0   -10723.2   -10716.3   -10712.1   -10712.1   -10712.1 
+replica 9                               8   -10961.4   -10961.4   -10961.4   -10946.3   -10931.2   -10916.7   -10903.2   -10891.1   -10880.8   -10867.8   -10870.4   -10861.7   -10857.0   -10852.0   -10842.2   -10832.6   -10823.6   -10815.3   -10811.4   -10807.7   -10800.8   -10794.7   -10789.2   -10779.9   -10767.1   -10759.4   -10759.4   -10759.4 
+replica 10                             15   -10872.3   -10872.3   -10872.3   -10852.6   -10833.9   -10816.3   -10800.1   -10785.8   -10773.8   -10759.4   -10763.3   -10773.5   -10775.9   -10777.2   -10777.0   -10774.7   -10771.3   -10767.4   -10765.4   -10763.4   -10759.5   -10755.8   -10752.4   -10746.5   -10738.0   -10733.0   -10733.0   -10733.0 
+replica 11                              4   -11039.1   -11039.1   -11039.1   -11017.1   -10995.8   -10975.4   -10956.6   -10939.8   -10925.6   -10907.8   -10909.1   -10904.7   -10902.3   -10899.9   -10895.1   -10890.5   -10886.2   -10882.2   -10880.4   -10878.6   -10875.3   -10872.4   -10869.8   -10865.3   -10859.1   -10855.3   -10855.3   -10855.3 
+replica 12                             11   -10791.4   -10791.4   -10791.4   -10779.8   -10767.8   -10755.8   -10744.2   -10733.6   -10724.5   -10713.7   -10718.2   -10717.9   -10716.5   -10714.5   -10709.5   -10703.6   -10697.6   -10691.8   -10688.9   -10686.2   -10681.1   -10676.4   -10672.2   -10665.0   -10654.9   -10648.9   -10648.9   -10648.9 
+replica 13                             13   -10728.9   -10728.9   -10728.9   -10715.8   -10703.3   -10691.6   -10681.0   -10671.9   -10664.7   -10658.5   -10668.0   -10675.0   -10675.8   -10675.4   -10672.0   -10666.7   -10660.4   -10653.9   -10650.7   -10647.5   -10641.5   -10635.9   -10630.8   -10622.1   -10610.0   -10602.8   -10602.8   -10602.8 
+replica 14                             17   -10897.6   -10897.6   -10897.6   -10884.0   -10870.2   -10856.5   -10843.6   -10832.0   -10822.3   -10810.8   -10815.1   -10879.9   -10899.2   -10912.8   -10927.9   -10933.3   -10933.3   -10930.4   -10928.4   -10926.2   -10921.3   -10916.4   -10911.7   -10903.2   -10890.8   -10883.4   -10883.4   -10883.4 
+replica 15                             26  2.955e+13  2.955e+13  2.955e+13  2.955e+13  2.955e+13  2.955e+13  2.955e+13  2.955e+13  2.955e+13  2.955e+13  2.955e+13  9.168e+11  2.214e+11  6.198e+10  6.801e+09  1.040e+09  2.024e+08  4.732e+07  2.419e+07  1.277e+07  3.859e+06  1.275e+06   450097.6    59548.2    -8434.2   -10724.0   -10724.0   -10724.0 
+replica 16                             14   -10807.1   -10807.1   -10807.1   -10789.2   -10772.1   -10756.0   -10741.2   -10728.1   -10717.2   -10704.8   -10710.3   -10711.0   -10710.4   -10709.4   -10706.5   -10703.1   -10699.5   -10695.8   -10694.1   -10692.4   -10689.2   -10686.2   -10683.6   -10679.0   -10672.5   -10668.6   -10668.6   -10668.6 
+replica 17                             19   -10687.9   -10687.9   -10687.9   -10681.8   -10674.4   -10666.7   -10659.1   -10652.2   -10646.8   -10642.8   -10653.7   -10713.0   -10731.9   -10745.8   -10762.7   -10770.0   -10771.7   -10770.2   -10768.7   -10766.9   -10762.8   -10758.5   -10754.1   -10746.2   -10734.4   -10727.3   -10727.3   -10727.3 
+replica 18                              9   -10868.4   -10868.4   -10868.4   -10851.9   -10835.8   -10820.4   -10806.0   -10792.9   -10781.9   -10768.4   -10771.8   -10767.9   -10765.1   -10761.8   -10754.7   -10747.3   -10740.0   -10733.1   -10729.8   -10726.7   -10720.8   -10715.6   -10710.8   -10702.8   -10691.7   -10685.1   -10685.1   -10685.1 
+replica 19                             20   -10558.4   -10558.4   -10558.4   -10547.3   -10535.6   -10524.1   -10513.2   -10503.5   -10495.5   -10487.0   -10493.2   -10649.3   -10700.2   -10738.7   -10789.0   -10816.4   -10830.2   -10836.0   -10837.1   -10837.3   -10835.9   -10833.2   -10829.9   -10822.9   -10811.4   -10804.2   -10804.2   -10804.2 
+replica 20                              0   -11069.8   -11069.8   -11069.8   -11043.4   -11018.6   -10995.6   -10974.6   -10956.0   -10940.3   -10920.3   -10920.3   -10916.0   -10913.5   -10911.0   -10905.8   -10900.6   -10895.8   -10891.3   -10889.2   -10887.1   -10883.4   -10880.0   -10877.0   -10872.0   -10865.0   -10860.8   -10860.8   -10860.8 
+replica 21                             25        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan        nan 
+replica 22                              3   -10854.8   -10854.8   -10854.8   -10826.8   -10800.9   -10777.3   -10756.1   -10737.6   -10722.4   -10704.4   -10707.3   -10705.9   -10704.5   -10702.7   -10698.5   -10694.0   -10689.5   -10685.2   -10683.2   -10681.2   -10677.5   -10674.2   -10671.2   -10666.2   -10659.3   -10655.3   -10655.3   -10655.3 
+replica 23                             12   -11155.3   -11155.3   -11155.3   -11139.0   -11123.6   -11109.2   -11096.0   -11084.2   -11074.3   -11063.4   -11069.0   -11066.6   -11064.4   -11061.9   -11056.1   -11049.9   -11043.8   -11037.9   -11035.1   -11032.4   -11027.4   -11022.8   -11018.7   -11011.7   -11001.8   -10995.9   -10995.9   -10995.9 
+replica 24                             24   -10932.2   -10932.2   -10932.2   -10908.5   -10885.6   -10863.9   -10843.8   -10826.0   -10811.1   -10793.6   -10798.0   -10798.0   -10798.0   -10798.0   -10797.9   -10797.9   -10797.9   -10797.9   -10797.9   -10797.9   -10797.8   -10797.8   -10797.8   -10797.8   -10797.7   -10797.7   -10797.7   -10797.7 
+replica 25                             27   848256.5   848256.5   848256.5   848273.3   848290.6   848307.5   848322.8   848336.1   848347.5   848359.6   848352.5   331649.3   210222.1   133756.6    53310.6    18877.4     3463.1    -3712.3    -5745.3    -7168.2    -8882.5    -9754.7   -10208.1   -10576.2   -10714.0   -10723.2   -10723.2   -10723.2 
+replica 26                              6   -10940.7   -10940.7   -10940.7   -10919.2   -10899.0   -10880.1   -10862.6
+=====================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   EXIT CODE: 11
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+=====================================================================================
+APPLICATION TERMINATED WITH THE EXIT STRING: Segmentation fault (signal 11)
+Tue Aug 13 18:25:23 PDT 2013

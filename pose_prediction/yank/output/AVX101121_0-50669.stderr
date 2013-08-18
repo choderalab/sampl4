@@ -1,0 +1,6 @@
+srun: init: Gres GPU plugin loaded
+application called MPI_Abort(comm=0x84000002, 0) - process 1
+application called MPI_Abort(comm=0x84000002, 0) - process 2
+application called MPI_Abort(comm=0x84000002, 0) - process 3
+application called MPI_Abort(comm=0x84000004, 0) - process 0
+slurmd[gpu-1-17]: Unable to send job complete message: Unable to contact slurm controller (connect failure)

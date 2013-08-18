@@ -1,0 +1,6 @@
+srun: init: Gres GPU plugin loaded
+slurmd[gpu-1-9]: *** JOB 50655 CANCELLED AT 2013-08-12T11:43:43 DUE TO TIME LIMIT ***
+slurmd[gpu-1-9]: *** STEP 50655.0 CANCELLED AT 2013-08-12T11:43:43 DUE TO TIME LIMIT ***
+srun: got SIGCONT
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 2 seconds for job step to finish.

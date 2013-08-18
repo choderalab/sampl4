@@ -1,0 +1,65 @@
+#Comma delimited predictions file. 
+#Format: Compound ID, predicted binding free energy, predicted statistical uncertainty, predcted model uncertainty.
+#Here we distinguish between statistical uncertainty and model uncertainty, as one may (for example) do force-field based calculations which yield very high-precision free energy estimates, given the particular force field. However, one may have considerable less confidence that the model uncertainty is anywhere near this low (uncertainty in ligand partial charges or other parameters, or expected quality of the force field, may substantially increase expected errors). Statistical uncertainties are expected to be reported typically based on some form of error analysis, while model uncertainty may be an empirical or qualitative estimate, such as based on past experience for similar compounds.
+#We anticipate scoring in at least two ways, one based on simple accuracy, and another based on uncertainty-weighted accuracy, where inaccurate results with low uncertainties are penalized the most, and accurate results with low uncertainties are penalized the most. High uncertainty results are rewarded/penalized less.
+#A section of comments at the end of the file should be used to specify any experimental data consulted during the challenge and how it was used, if at all.
+AVX-15988_0,  -11.491,    0.130,    2.000
+AVX-17257_0,  -11.141,    0.191,    2.000
+AVX-17260_0,  -12.272,    0.187,    2.000
+AVX-17285_0,  -11.504,    0.195,    2.000
+AVX-17286_0,  -12.974,    0.196,    2.000
+AVX-17287_0,  -12.041,    0.229,    2.000
+AVX-17375_3,  -13.057,    0.259,    2.000
+AVX-17377_0,  -11.797,    0.203,    2.000
+AVX-17379_0,  -11.589,    0.180,    2.000
+AVX-17389_0,   -8.981,    0.199,    2.000
+AVX-17542_0,  -13.414,    0.317,    2.000
+AVX-17543_0,  -13.494,    0.241,    2.000
+AVX-17557_3,   -9.104,    0.223,    2.000
+AVX-17558_3,  -13.596,    0.235,    2.000
+AVX-17560_0,  -16.709,    0.287,    2.000
+AVX-17631_0,   -8.175,    0.092,    2.000
+AVX-17679_0,   -8.836,    0.122,    2.000
+AVX-17680_0,  -14.082,    0.277,    2.000
+AVX101118_0,  -18.758,    0.260,    2.000
+AVX101119_0,  -17.398,    0.284,    2.000
+AVX101122_0,  -16.606,    0.283,    2.000
+AVX101124_1,  -12.487,    0.343,    2.000
+AVX101140_0,  -13.361,    0.251,    2.000
+AVX17587_2,  -13.272,    0.317,    2.000
+AVX17715_0,  -14.264,    0.309,    2.000
+AVX38672_0,  -13.900,    0.325,    2.000
+AVX38673_1,  -12.072,    0.439,    2.000
+AVX38674_0,  -10.197,    0.360,    2.000
+AVX38708_1,  -12.007,    0.391,    2.000
+AVX38741_0,  -17.806,    0.305,    2.000
+AVX38742_3,   -9.669,    0.194,    2.000
+AVX38743_5,   -6.789,    0.414,    2.000
+AVX38747_0,  -10.731,    0.317,    2.000
+AVX38748_0,  -11.256,    0.394,    2.000
+AVX38749_0,  -11.970,    0.380,    2.000
+AVX38753_1,  -17.504,    0.308,    2.000
+AVX38779_1,  -15.862,    0.316,    2.000
+AVX38780_0,  -18.084,    0.396,    2.000
+AVX38781_1,  -13.020,    0.341,    2.000
+AVX38782_1,  -12.703,    0.365,    2.000
+AVX38783_1,  -13.760,    0.347,    2.000
+AVX38784_1,  -14.373,    0.262,    2.000
+AVX38785_1,  -10.971,    0.593,    2.000
+AVX38786_1,  -13.013,    0.426,    2.000
+AVX38787_1,  -14.525,    0.294,    2.000
+AVX38788_1,  -10.279,    0.399,    2.000
+AVX38789_1,  -12.436,    0.432,    2.000
+AVX40811_0,   -7.869,    0.296,    2.000
+AVX40812_0,  -11.525,    0.320,    2.000
+AVX40911_0,  -10.940,    0.225,    2.000
+GL5243-100_0,  -11.482,    0.323,    2.000
+GL5243-102_0,  -10.809,    0.290,    2.000
+GL5243-104_0,  -13.580,    0.273,    2.000
+GL5243-106_0,   -9.000,    0.233,    2.000
+GL5243-84_0,  -10.952,    0.336,    2.000
+pC2-A03_0,  -13.994,    0.193,    2.000
+#Note any experimental data consulted here.  
+None.
+
+# NOTE: Binding free energies are in kcal/mol.
